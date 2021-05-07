@@ -13,24 +13,18 @@ const {
 
 client.once('ready', () => {
     console.log('Bot Start!!!');
-    client.user.setUsername("Kana");
+    client.user.setUsername("7DS Knight");
     client.user.setActivity(`Watching for ${prefix}Help`);
-    client.user.setAvatar("https://i.imgur.com/69FLt5A.jpg")
     
     new WOKCommands(client, {
         commandsDir:'Commands',
-        featuresDir:'Features'
     })
     
     .setMongoPath(MONGO_URI)
     .setDisplayName("Kana")
     .setCategorySettings([
     {
-        name: 'Moderation',
-        emoji: '🔨'
-    },
-    {
-        name: 'Fun & Games',
+        name: 'Guides',
         emoji: '🎮'
     },
     {
