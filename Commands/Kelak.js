@@ -15,77 +15,44 @@ module.exports = {
         "\n" + '🇭:Hard' +
         "\n" + '🇽:Extreme')
 
-    const KelakN = new Discord.MessageEmbed()
-        .setColor('#808080')
-        .setTitle('Kelak Normal Guide')
-        .setDescription(':blue_circle: Normal [ rDeri, gGowther, bEastin, rEllate ]' +
-        "\n" + ' ' +
-        "\n" + 'Setup: Deris gear is ATT/CRIT with 5/5 ATT/CRIT rolls, Crit Dmg Food' +
-        "\n" + ' ' +
-        "\n" + ':one:  Turn 1' +
-        "\n" + ' ' +
-        "\n" + 'Play Deri Swipe, Gowther Debuff and both Ellate cards.' +
-        "\n" + ' ' +
-        "\n" + ':pencil:You can only use 3 deri swipes and do not play ellate detonates when the boss has more than 3 orbs and **ABSOLUTELY DO NOT USE A BUFF BEFORE A SWIPE**.' +
-        "\n" + ' ' +
-        "\n" + ':two:  Turn 2' +
-        "\n" + ' ' +
-        "\n" + 'Continue to charge deri and ellate ult while building stacks on deri' +
-        "\n" + ' ' +
-        "\n" + ':pencil:Repeat until at least turn 5 which is the minimum kill turn with a maximum of turn 8' +
-        "\n" + ':pencil:You want to get rank 3 Helbram/Eastin Buff, Deri Buff, you only need a rank 2 Ellate Ball and also Ellate ult' +
-        "\n" + ':pencil:You need to crit for at least 8million for a good score' +
-        "\n" + ':pencil:Best case scenari you end with 16 stacks')
+        const KelakN = new Discord.MessageEmbed()
+            .setColor('#808080')
+            .setTitle('Kelak Normal Guide')
+            .setDescription('Team: gGow(no link), Deri(Sariel link if he is 4:6+ else BDM), Gustav(no link), Helbram(no link)' +
+            "\n" + ' ' +
+            "\n" + 'Setup: Deris gear is ATT/CRIT with 5/5 ATT/CRIT rolls, Crit Dmg Food' +
+            "\n" + ' ' +
+            "\n" + 'Dont put atk item on helbram and gow no weapon too you gonna need maximum deri buffs to maximise her passif remember you can use only 2 slap from deri the third one the boss is dead ' +
+            "\n" + ' ' +
+            "\n" + 'Notes: u want to finish with 8-9 stacks' +
+            "\n" + ' ' +
+            "\n" + 'Potential Points: 5.5k+' +
+            "\n" + ' ' +
+            "\n" + 'https://www.youtube.com/watch?v=1Yarw3rt20s&ab_channel=%E3%83%93%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC')
 
-    const KelakH = new Discord.MessageEmbed()
-        .setColor('#808080')
-        .setTitle('Kelak Hark Guide')
-        .setDescription(':orange_circle: Hard [ rDeri, gGowther, bEastin, rEllate ]' +
-        "\n" + ' ' +
-        "\n" + 'Setup: Deris gear is ATT/CRIT with 5/5 ATT/CRIT rolls, Crit Dmg Food' +
-        "\n" + ' ' +
-        "\n" + ':one:  Turn 1' +
-        "\n" + ' ' +
-        "\n" + 'Play Deri Swipe, Gowther Debuff and both Ellate cards.' +
-        "\n" + ' ' +
-        "\n" + ':pencil:Hard is more forgiving so you have about 5 hits 3 if you use a buff' +
-        "\n" + ' ' +
-        "\n" + ':two:  Turn 2' +
-        "\n" + ' ' +
-        "\n" + 'Continue to charge deri and ellate ult while building stacks on deri' +
-        "\n" + ' ' +
-        "\n" + ':pencil:Repeat until at least turn 5 which is the minimum kill turn with a maximum of turn 8' +
-        "\n" + ':pencil:You want to get rank 3 Ellate Ball, Helbram/Eastin Buff, Deri Buff and Ellate ult' +
-        "\n" + ':pencil:You need to crit for at least 8million for a good score' +
-        "\n" + ':pencil:Best case scenario you end with 16 stacks')
+        const KelakH = new Discord.MessageEmbed()
+            .setColor('#808080')
+            .setTitle('Kelak Hark Guide')
+            .setDescription('Team: gGow, Geri(Sariel Link if 4:6 else BDM link), Elatte, Helbram' +
+            "\n" + ' ' +
+            "\n" + 'Food: ATT' +
+            "\n" + ' ' +
+            "\n" + 'Basically the same thing as normal' +
+            "\n" + ' ' +
+            "\n" + 'Potential Points: 6.5k+' +
+            "\n" + ' ' +
+            "\n" + 'https://www.youtube.com/watch?v=nuAshb9eZO4&t=127s')
 
-    const KelakX = new Discord.MessageEmbed()
-        .setColor('#808080')
-        .setTitle('Kelak Extreme Guide')
-        .setDescription(':purple_circle: Extreme [ rDeri, gGowther, bEastin, rEllate ]' +
-        "\n" + ' ' +
-        "\n" + 'Setup: Deris gear is ATT/CRIT with 5/5 ATT/CRIT rolls, ATT Food' +
-        "\n" + ' ' +
-        "\n" + ':one:  Turn 1' +
-        "\n" + ' ' +
-        "\n" + 'Play Deri Swipe, Gowther Debuff and both Ellate cards.' +
-        "\n" + ' ' +
-        "\n" + ' ' +
-        "\n" + ':two:  Turn 2' +
-        "\n" + ' ' +
-        "\n" + 'Continue to charge deri and ellate ult for turn 4' +
-        "\n" + ' ' +
-        "\n" + ':four:  Turn 4' +
-        "\n" + ' ' +
-        "\n" + 'Play both Ults and use trash cards' +
-        "\n" + ' ' +
-        "\n" + 'Phase 2' +
-        "\n" + ' ' +
-        "\n" + 'Charge deri and ellate ult for turn 8 as well as the rank 3 Ellate Ball, Eastin Buff and Deri Buff' +
-        "\n" + ' ' +
-        "\n" + ':pencil:You want to get rank 3 Ellate Ball, Helbram/Eastin Buff, Deri Buff and Ellate ult' +
-        "\n" + ':pencil:You need to crit for at least 10.5million for a good score' +
-        "\n" + ':pencil:Best case scenario you end with 16 stacks')
+        const KelakX = new Discord.MessageEmbed()
+            .setColor('#808080')
+            .setTitle('Kelak Extreme Guide')
+            .setDescription('Team: gGow, Geri(Sariel Link if 4:6 else BDM link), Elatte, Helbram ' +
+            "\n" + ' ' +
+            "\n" + 'Food: ATT' +
+            "\n" + ' ' +
+            "\n" + 'Potential Points: 7k+' +
+            "\n" + ' ' +
+            "\n" + 'https://www.youtube.com/watch?v=m3l-Dlh6mOs')
 
         //#endregion
 
@@ -93,14 +60,25 @@ module.exports = {
         const reactions = ['🇳', '🇭', '🇽'];      
         for (const reaction of reactions) sentMessage.react(reaction);      
         
-        const filter = (reaction, user) => {
-            reactions.includes(reaction.emoji.name) && user.id === message.author.id
-        };     
+        const Nfilter = (reaction, user) => reaction.emoji.name === '🇳' && user.id === message.author.id
+        const Hfilter = (reaction, user) => reaction.emoji.name === '🇭' && user.id === message.author.id
+        const Xfilter = (reaction, user) => reaction.emoji.name === '🇽' && user.id === message.author.id
+        
 
-        const collector = message.createReactionCollector(filter, { time: 5000})
-        collector.on('end', collected => {
-            const response = collected === '🇳' ? KelakN : (collected === '🇭' ? KelakH : EinekX); 
-            message.channel.send(response)
+        const ncollector = sentMessage.createReactionCollector(Nfilter, { time: 5000})
+        const hcollector = sentMessage.createReactionCollector(Hfilter, { time: 5000})
+        const xcollector = sentMessage.createReactionCollector(Xfilter, { time: 5000})
+
+        ncollector.on('collect', r => {
+            message.channel.send(KelakN)
+        }); 
+
+        hcollector.on('collect', r => {
+            message.channel.send(KelakH)
+        }); 
+
+        xcollector.on('collect', r => {
+            message.channel.send(KelakX)
         }); 
     }
 }

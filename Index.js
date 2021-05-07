@@ -10,20 +10,18 @@ const WOKCommands = require('wokcommands')
 const {
     prefix,
     token,  
-    MONGO_URI
 } = require(`./Config.json`);
 
 client.once('ready', () => {
     console.log('Bot Start!!!');
     client.user.setUsername("7DS Knight");
-    client.user.setActivity(`Watching for ${prefix}Help`);
+    client.user.setActivity(`Watching for 7Help`);
     
     new WOKCommands(client, {
         commandsDir:'Commands',
     })
     
-    .setMongoPath(MONGO_URI)
-    .setDisplayName("Kana")
+    .setDefaultPrefix('7')
     .setCategorySettings([
     {
         name: 'Guides',

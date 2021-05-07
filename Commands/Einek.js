@@ -18,114 +18,128 @@ module.exports = {
         const EinekN = new Discord.MessageEmbed()
             .setColor('#808080')
             .setTitle('Einek Normal Guide')
-            .setDescription(':blue_circle: Normal [ rHowzer, rGilthunder, rArthur, rTwigo ]' +
+            .setDescription('Team: Rgow, Rderi, Rtwigo, Rzeldris' +
             "\n" + ' ' +
             "\n" + ':one:  Turn 1' +
             "\n" + ' ' +
-            "\n" + 'Move Gil cards twice and use Taunt and any other card you have in the hand except for Arthurs buff and Gils attack.' +
+            "\n" + 'Use Double twigo card, Zeldris debuff, zeldris drain. ' +
             "\n" + ' ' +
             "\n" + ':pencil:You want the boss to focus on Gil, instead of the other characters.' +
             "\n" + ' ' +
             "\n" + ':two:  Turn 2' +
-            "\n" + 'Charge Gils ult and use taunt if you have it. If you dont, use Arthurs buff on Gilthunder.' +
+            "\n" + ' ' +
+            "\n" + 'Youre looking for a turn 2 in which you can apply a level 3 attack seal, if you cant do that just reset ( unless your cards are amazing and you feel like you can try your for 1 more turn.' +
             "\n" + ' ' +
             "\n" + ':pencil:You want the boss to keep focusing on Gil.' +
             "\n" + '' +
-            "\n" + ':three:  Turn 3' +
-            "\n" + 'Use trash cards, buff Gilthunder if possible and use his ultimate.' +
+            "\n" + ':three:  Turn 3+' +
             "\n" + ' ' +
-            "\n" + ':pencil:If you hit over 200k, you are done. If you try a few times and you cant because you lack damage try using gEscanor instead of Gilthunder and follow the Mono Green strat but using buffs on Escanor so the rest dont get hit, then ult turn 3.' +
+            "\n" + 'From now and going forward you start stacking Derieri, you MUST to keep the boss attack sealed so that he doesnt remove your Derieri buffs. Theres a couple turns when it can be worth it to gamble and not attack seal. Like when the boss only has 1 attack card to use that turn, you can try your luck on the 50/50 on which card the boss will use, if its the buff removal you need to restart, if its the ranged attack you just won your coin toss. ' +
             "\n" + ' ' +
-            "\n" + ':family_wwbb: Team:' +
-            "\n" + 'https://drive.google.com/file/d/127FSpXhBG8Vmn23m6n8pBDwNL03LIlWL/view?usp=sharing' +
-            "\n" + ' ' +
-            "\n" + ':tv: Video:' +
-            "\n" + 'https://drive.google.com/file/d/1dPUGsDQxf1i9pkJmY62VrVRaf10k4DYu/view?usp=sharing');
+            "\n" + 'Potential Points: 2.4k+');
 
-        const EinekX = new Discord.MessageEmbed()
+        const EinekH = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Einek Extreme Guide')
-            .setDescription(':purple_circle: Extreme [ gEscanor, rHowzer, rArthur, rTwigo ]' +
+            .setTitle('Einek Hard Guide')
+            .setDescription('Team: Green Gowther,  G Helbram, R Slater, R Derieri' +
             "\n" + ' ' +
             "\n" + ':one: Turn 1' +
             "\n" + ' ' +
-            "\n" + 'Use Arthurs buff on Escanor, both Escanor attacks and Arthur attack.' +
-            "\n" + ' ' +
-            "\n" + '• Ult food will allow you to do the raid in two turns instead, erasing that first turn RNG so move to Turn 2 in this guide directly.' +
+            "\n" + 'Helbram Poison, Slater ATK , rank up Deri, move Gowther card making sure to keep the helbram buff on the left' +
             "\n" + ' ' +
             "\n" + ':two:  Turn 2' +
             "\n" + ' ' +
-            "\n" + 'Rush Escanor by moving or combining his cards.' +
+            "\n" + '2* Deri Att, Gowther Debuff, Slater seal, Either Move Gowther card or play a trash card' +
             "\n" + ' ' +
             "\n" + ':pencil:The boss will regenerate his shield at the end of the turn, so dont waste your good damage cards. Remember to use at least one card so the ultimate can be drawn.' +
             "\n" + ' ' +
             "\n" + ':three:  Turn 3' +
             "\n" + ' ' +
-            "\n" + 'Bring down the Boss Shield by using any cards from the Howzer, Arthur and Twigo or any ultimate you might have at this point. Then use Escanors ultimate and kill the boss to move into phase two.' +
+            "\n" + 'Get Gowthers ult ready for turn 5 and keep stacking deri and removing trash cards Reset if you didnt get decent cards (deri/rankup)' +
             "\n" + ' ' +
             "\n" + ':four:  Turn 4' +
             "\n" + ' ' +
-            "\n" + 'Once in Phase 2. Rush Escanor ultimate immediately on this turn while also breaking boss’ shield. ' +
-            "\n" + ' ' +
-            "\n" + ':pencil:Ideally, the boss would only do single attacks to Escanor. Otherwise, you would lose points due to HP loss.' +
+            "\n" + 'Gowther Ult, Slater Debuff, Get Helbram ult ready for next turn, Deri Buff' +
             "\n" + ' ' +
             "\n" + ':five:  Turn 5' +
             "\n" + ' ' +
-            "\n" + 'Use all attacks/ultimates you have and then kill the boss with Escanors ultimate.' +
+            "\n" + 'Helbram Ult (You can optionally ult next turn), Continue Stacking Deri' +
             "\n" + ' ' +
-            "\n" + ':warning:If Twigo gets single targeted by the boss with the spike attack first couple turns, especially if it crits, then that’s already a dead run.');
+            "\n" + ':six:  Turn 6' +
+            "\n" + ' ' +
+            "\n" + '3* Deri Buff, 3* Helbram Buff ult' +
+            "\n" + ' ' +
+            "\n" + 'Potential Points: 3.5k+');
 
-        const EinekH = new Discord.MessageEmbed()
+        const EinekXC = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Einek Hard Guide')
-            .setDescription(':orange_circle: Hard [ rHowzer, rGil, rArthur, rTwigo ]' +
-            "\n" + ':pencil:You can choose to eat HP food or Ult food here.' +
-            "\n" + ' ' +
-            "\n" + '• HP food will require you to reset until he launches 3 single attacks in turn 1 so you can taunt them, then move with Gil ult charge turn 2. This one will yield more points.' +
-            "\n" + ' ' +
-            "\n" + '• Ult food will allow you to do the raid in two turns instead, erasing that first turn RNG so move to Turn 2 in this guide directly.' +
+            .setTitle('Einek Extreme Crit Guide')
+            .setDescription('Team: Green Gowther,  G Helbram, R Slater, R Derieri' +
+            "\n" + ':one:  Phase 1' +
             "\n" + ' ' +
             "\n" + ':one:  Turn 1' +
             "\n" + ' ' +
-            "\n" + 'Move Gil cards twice and use Taunt and any other card you have in the hand except for Arthurs buff and Gils attack. ' +
-            "\n" + ' ' +
-            "\n" + ':pencil:You want the boss to focus on Gil, instead of the other characters.' +
+            "\n" + 'Move Derieri card twice, use Slater and Helbram attack cards.' +
             "\n" + ' ' +
             "\n" + ':two:  Turn 2' +
             "\n" + ' ' +
-            "\n" + 'Charge Gils ult and use taunt if you have it. If you dont, use Arthurs buff on Gilthunder.' +
-            "\n" + ' ' +
-            "\n" + ':pencil:You want the boss to keep focusing on Gil. If you are using Ult food you can also try to do a run with 3 singles to maximize your HP.' +
+            "\n" + 'Get Derieri ult by moving her cards 3 times, throw out an unneeded card' +
             "\n" + ' ' +
             "\n" + ':three:  Turn 3' +
             "\n" + ' ' +
-            "\n" + 'Use trash cards, buff Gilthunder if possible and use his ultimate.' +
+            "\n" + 'Use helbram buff, rank up Derieri, use her buff and then her ult. Make sure you break 500k damage here to get the +200p from reaching that damage value and keep in mind that damage against the shield isnt taken into consideration. ( if youre 6/6 you dont need to use helbram buff, only derieri buff and 1 attack card should be enough)' +
             "\n" + ' ' +
-            "\n" + ':pencil:If you hit over 200k, you are done. If you try a few times and you cant because you lack damage try using gEscanor instead of Gilthunder and follow the Mono Green strat but using buffs on Escanor so the rest dont get hit, then ult turn 3.' +
+            "\n" + ':two:  Phase 2' +
             "\n" + ' ' +
-            "\n" + ':family_wwbb: Team:' +
-            "\n" + ' https://drive.google.com/file/d/1qDT6L6PgRBtoSHKjg0DnZCcb-roLz1Ds/view?usp=sharing' +
+            "\n" + ':four:  Turn 4+' +
             "\n" + ' ' +
-            "\n" + ':tv: Video:' +
-            "\n" + 'https://drive.google.com/file/d/1TM5LDVJv1mqVaZ6WpLVcx3jEpjz6-a7t/view?usp=sharing');
+            "\n" + 'Use your level 2 Deri slap + whatever you might need to break the shield and use Slaters debuff.' +
+            "\n" + ' ' +
+            "\n" + 'You need to keep the boss debuffed with Slater so that you can keep stacking Derieri and you control the boss ult gauge with Gowther debuff + ult  ( remember that not the boss ult deranks all your cards and removes ult gauge based on cards deranked so that can kill your run, not to mention that it does a lot of damage so thats a big point loss at the end.)' +
+            "\n" + ' ' +
+            "\n" + 'You want to ult with Helbram before Derieri ult in order to remove the boss +30% defense related buff, remember that the boss is immune to buff removal until you break the shield, so you can only use helbram ult after that.' +
+            "\n" + ' ' +
+            "\n" + 'You want to finish around turn 7-8 ideally, with as many Derieri passive stacks as you can.' +
+            "\n" + ' ' +
+            "\n" + 'Potential Points: 6k+');
+
+            const EinekX = new Discord.MessageEmbed()
+            .setColor('#808080')
+            .setTitle('Einek Extreme HP Guide')
+            .attachFiles("https://i.imgur.com/mRIOQPz.png")
+            .attachFiles("https://i.imgur.com/otizTK9.png")
+            .attachFiles("https://i.imgur.com/PJKFgF3.png")
+
 
             //#endregion
 
         if (message.author.bot) return;
         else 
-        {
+        {        
             const sentMessage = await message.channel.send(Einek);
             const reactions = ['🇳', '🇭', '🇽'];      
             for (const reaction of reactions) sentMessage.react(reaction);      
             
-            const filter = (reaction, user) => {
-                reactions.includes(reaction.emoji.name) && user.id === message.author.id
-            };     
+            const Nfilter = (reaction, user) => reaction.emoji.name === '🇳' && user.id === message.author.id
+            const Hfilter = (reaction, user) => reaction.emoji.name === '🇭' && user.id === message.author.id
+            const Xfilter = (reaction, user) => reaction.emoji.name === '🇽' && user.id === message.author.id
+            
 
-            const collector = message.createReactionCollector(filter, { time: 5000})
-            collector.on('end', collected => {
-                const response = collected === '🇳' ? EinekN : (collected === '🇭' ? EinekH : EinekX); 
-                message.channel.send(response)
+            const ncollector = sentMessage.createReactionCollector(Nfilter, { time: 5000})
+            const hcollector = sentMessage.createReactionCollector(Hfilter, { time: 5000})
+            const xcollector = sentMessage.createReactionCollector(Xfilter, { time: 5000})
+
+            ncollector.on('collect', r => {
+                message.channel.send(EinekN)
+            }); 
+
+            hcollector.on('collect', r => {
+                message.channel.send(EinekH)
+            }); 
+
+            xcollector.on('collect', r => {
+                message.channel.send(EinekX)
+                message.channel.send(EinekXC)
             }); 
         }
     }
