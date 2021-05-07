@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
+
 const client = new Discord.Client({
     partials: ['MESSAGE', 'REACTION']
-});    
+});  
+
 const process = require('process');
 const WOKCommands = require('wokcommands')
 
@@ -25,7 +27,7 @@ client.once('ready', () => {
     .setCategorySettings([
     {
         name: 'Guides',
-        emoji: '🎮'
+        emoji: '📜'
     },
     {
         name: 'Test',

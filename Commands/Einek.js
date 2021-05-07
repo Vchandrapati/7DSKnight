@@ -1,14 +1,19 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js')
+
 module.exports = {
-    name: 'einek',
-    description: 'Shows guides for Einek',
-    async execute(message, args){
+    category: 'Guides',
+    description: 'Einek Guide',
+    
+    callback: async ({ message }) => {
+
+        //#region guide
+
         const Einek = new Discord.MessageEmbed()
-            .setColor('#808080')
-            .setTitle('Select Difficulty')
-            .setDescription('🇳:Normal' + 
-            "\n" + '🇭:Hard' +
-            "\n" + '🇽:Extreme');
+        .setColor('#808080')
+        .setTitle('Select Difficulty')
+        .setDescription('🇳:Normal' + 
+        "\n" + '🇭:Hard' +
+        "\n" + '🇽:Extreme');
 
         const EinekN = new Discord.MessageEmbed()
             .setColor('#808080')
@@ -104,37 +109,24 @@ module.exports = {
             "\n" + ':tv: Video:' +
             "\n" + 'https://drive.google.com/file/d/1TM5LDVJv1mqVaZ6WpLVcx3jEpjz6-a7t/view?usp=sharing');
 
+            //#endregion
+
         if (message.author.bot) return;
         else 
         {
             const sentMessage = await message.channel.send(Einek);
             const reactions = ['🇳', '🇭', '🇽'];      
             for (const reaction of reactions) sentMessage.react(reaction);      
-            const filter = (reaction, user) => reactions.includes(reaction.emoji.name) && user.id === message.author.id;     
-            sentMessage.awaitReactions(filter, { max: 1, timeout: 5000, errors: ['time'] }).then(collected => 
-            {
-                const { name } = collected.first().emoji;
-                const response = name === '🇳' ? EinekN : (name === '🇭' ? EinekH : EinekX); 
+            
+            const filter = (reaction, user) => {
+                reactions.includes(reaction.emoji.name) && user.id === message.author.id
+            };     
 
-                if (response !== null)
-                {
-                    sentMessage.channel.send(response);
-                }
-                else
-                {
-                    return;
-                }
-            }).catch((name) => message.channel.send('You either took too long or something went wrong selecting your difficulty.'));
+            const collector = message.createReactionCollector(filter, { time: 5000})
+            collector.on('end', collected => {
+                const response = collected === '🇳' ? EinekN : (collected === '🇭' ? EinekH : EinekX); 
+                message.channel.send(response)
+            }); 
         }
-    },
-};
-const Discord = require('discord.js')
-
-module.exports = {
-    category: 'Moderation',
-    description: 'Bans target person',
-    
-    callback: ({ message }) => {
-
     }
 }

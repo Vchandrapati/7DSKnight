@@ -1,14 +1,18 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js')
+
 module.exports = {
-    name: 'akumu',
-    description: 'Shows guides for Akumu',
-    async execute(message, args){
+    category: 'Guides',
+    description: 'Akumu Guide',
+
+    callback: async ({ message }) => {
+
+        //#region guides
         const Akumu = new Discord.MessageEmbed()
-            .setColor('#808080')
-            .setTitle('Select Difficulty')
-            .setDescription('🇳:Normal' + 
-            "\n" + '🇭:Hard' +
-            "\n" + '🇽:Extreme')
+        .setColor('#808080')
+        .setTitle('Select Difficulty')
+        .setDescription('🇳:Normal' + 
+        "\n" + '🇭:Hard' +
+        "\n" + '🇽:Extreme')
 
         const AkumuN = new Discord.MessageEmbed()
             .setColor('#808080')
@@ -98,27 +102,24 @@ module.exports = {
             "\n" + ':pencil:You need to crit for at least 10.5million for a good score' +
             "\n" + ':pencil:Best case scenario you end with 16 stacks')
 
-        if (message.author.bot) return;
+        //#endregion
+
+        if (message.author.bot) 
+            return;
         else 
         {
             const sentMessage = await message.channel.send(Akumu);
             const reactions = ['🇳', '🇭', '🇽'];      
             for (const reaction of reactions) sentMessage.react(reaction);      
-            const filter = (reaction, user) => reactions.includes(reaction.emoji.name) && user.id === message.author.id;     
-            sentMessage.awaitReactions(filter, { max: 1, timeout: 5000, errors: ['time'] }).then(collected => 
-            {
-                const { name } = collected.first().emoji;
-                const response = name === '🇳' ? AkumuN : (name === '🇭' ? AkumuH : AkumuX); 
+            const filter = (reaction, user) => {
+                reactions.includes(reaction.emoji.name) && user.id === message.author.id
+            };     
 
-                if (response !== null)
-                {
-                    sentMessage.channel.send(response);
-                }
-                else
-                {
-                    return;
-                }
-            }).catch((name) => message.channel.send('You either took too long or something went wrong selecting your difficulty.'));
+            const collector = message.createReactionCollector(filter, { time: 5000})
+            collector.on('end', collected => {
+                const response = collected === '🇳' ? AkumuN : (collected === '🇭' ? AkumuH : AkumuX); 
+                message.channel.send(response)
+            });
         }
-    },
-};
+    }
+}
