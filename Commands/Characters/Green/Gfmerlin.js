@@ -4,6 +4,7 @@ module.exports = {
     category: 'Character Info',
     description: 'Shows Character Info',
     
+    
     callback: ({ message }) => {
         const Character = new Discord.MessageEmbed()
             .setColor('#1DC241')
