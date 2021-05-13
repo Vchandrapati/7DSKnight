@@ -11,7 +11,7 @@ module.exports = {
             .setThumbnail('https://i.imgur.com/JKZTJpc.jpg')
             .setDescription('Rarity: SSR' + 
             "\n" + 'Attribute: Blue' +
-            "\n" + 'Race: Archangel' +
+            "\n" + 'Race: Goddess' +
             "\n" + ' ' +
             "\n" + '**Passive: Angelic Wrath, Works in Subslot: No**' +
             "\n" + 'Decreases all enemies Max HP by the value of 200% of the heros Defense. (Applies when entering battle, excludes Death Match)' +

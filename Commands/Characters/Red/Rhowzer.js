@@ -29,7 +29,7 @@ module.exports = {
             "\n" + 'Inflicts damage equal to **400%/440%/480%/520%/560%/600%** of Attack on all enemies, decreases skill ranks, then depletes the Ultimate Move Gauge by the number of skill rank decreases.' +
             "\n" + ' ' +
             "\n" + '**Recommended Gear:** HP/DEF' +
-            "\n" + '**Recommended Substats:** PIERCE/DEF/HP')
+            "\n" + '**Recommended Substats:** ATT/DEF/HP')
             message.channel.send(Character);
     }
 }

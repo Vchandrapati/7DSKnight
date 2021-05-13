@@ -29,7 +29,7 @@ module.exports = {
             "\n" + 'Inflicts damage equal to **630%/693%/756%/819%/882%/945%** of Attack on one enemy. **Disables Attack Skills** for 2 turn(s).' +
             "\n" + ' ' +
             "\n" + '**Recommended Gear:** HP/DEF' +
-            "\n" + '**Recommended Substats:** PIERCE/DEF/HP')
+            "\n" + '**Recommended Substats:** ATT/DEF/HP')
             message.channel.send(Character);
     }
 }

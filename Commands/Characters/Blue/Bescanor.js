@@ -26,7 +26,7 @@ module.exports = {
             "\n" + '**Ultimate: Divine Sword Escanor**' +
             "\n" + 'Inflicts damage equal to **720%/792%/864%/936%/1008%/1080%** of Attack on one enemy, then inflicts additional **Death** damage **20%/30%/40%/55%/70%/100%**.' +
             "\n" + ' ' +
-            "\n" + '**Recommended Gear:** HP/CRIT' +
+            "\n" + '**Recommended Gear:** ATT/CRIT' +
             "\n" + '**Recommended Substats:** ATT/DEF/HP')
             message.channel.send(Character);
     }

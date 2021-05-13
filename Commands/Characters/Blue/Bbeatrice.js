@@ -26,7 +26,7 @@ module.exports = {
             "\n" + '**Ultimate: Expert of Yin Magic**' +
             "\n" + 'Inflicts damage equal to **350%/385%/420%/455%/490%/525%** of Attack on all enemies and **Lifesteals 30%** of the damage.' +
             "\n" + ' ' +
-            "\n" + '**Recommended Gear:** HP/DEF' +
+            "\n" + '**Recommended Gear:** ATT/DEF' +
             "\n" + '**Recommended Substats:** ATT/DEF/HP')
             message.channel.send(Character);
     }
