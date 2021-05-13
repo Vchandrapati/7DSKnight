@@ -11,7 +11,7 @@ module.exports = {
             .setThumbnail('https://i.imgur.com/PW7Z9ZR.jpg')
             .setDescription('Rarity: SSR' + 
             "\n" + 'Attribute: Red' +
-            "\n" + 'Race: Archangel' +
+            "\n" + 'Race: Goddess' +
             "\n" + ' ' +
             "\n" + '**Passive: Angelic Volition, Works in Subslot: No**' +
             "\n" + 'Increases the heros damage dealt by 50% when attacking enemies with Bleeding, Poisoned or Shocked Debuff(s).' +
@@ -29,7 +29,7 @@ module.exports = {
             "\n" + 'Inflicts **Sever** damage equal to **630%/693%/756%/819%/882%/945%** of Attack on one enemy.' +
             "\n" + ' ' +
             "\n" + '**Recommended Gear:** ATT/CRIT' +
-            "\n" + '**Recommended Substats:** CRIT/DEF/HP')
+            "\n" + '**Recommended Substats:** ATT/DEF/HP')
             message.channel.send(Character);
     }
 }
