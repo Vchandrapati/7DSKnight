@@ -13,8 +13,8 @@ module.exports = {
             "\n" + 'Attribute: Red' +
             "\n" + 'Race: Goddess' +
             "\n" + ' ' +
-            "\n" + '**Passive: Angelic Volition, Works in Subslot: No**' +
-            "\n" + 'Increases the heros damage dealt by 50% when attacking enemies with Bleeding, Poisoned or Shocked Debuff(s).' +
+            "\n" + '**Passive: Will of the Angel, Works in Subslot: No**' +
+            "\n" + 'Increases the basic stats of Goddess allies by 20% of the heros basic stats. (Applies when entering battle)' +
             "\n" + ' ' +
             "\n" + '**Grace of Tornado**' +
             "\n" + 'If a Critical Strike occurs from the heros skill use, ignores 50% of the enemieys Critical Defense.' +
