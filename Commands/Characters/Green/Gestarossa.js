@@ -14,7 +14,7 @@ module.exports = {
             "\n" + 'Attribute: Green' +
             "\n" + 'Race: Demon' +
             "\n" + ' ' +
-            "\n" + '**Passive: Courageous Heart, Works in Subslot: No**' +
+            "\n" + '**Passive: Courageous Heart, Works in Subslot: Yes**' +
             "\n" + 'Allies have their Debuffs removed when using Stance Skills and gain Debuff Immunity for 2 turn(s). (Excluding Ultimate Moves)' +
             "\n" + ' ' +
             "\n" + '**Commandment of Love**' +
