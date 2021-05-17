@@ -51,7 +51,7 @@ module.exports = {
 
         const BergiusHG = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('bergius Hard Gloxinia Guide')
+            .setTitle('Bergius Hard Gloxinia Guide')
             .setDescription('Team: gGerhearde, bMerlin, rGlox, rCamilla' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
@@ -96,7 +96,7 @@ module.exports = {
 
         const BergiusHM = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('bergius Hard Camilla Guide')
+            .setTitle('Bergius Hard Camilla Guide')
             .setDescription('Team: rDiane, gGerhearde, rCamilla, gMerlin ' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
