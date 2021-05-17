@@ -8,11 +8,11 @@ module.exports = {
 
         //#region guides
         const Bergius = new Discord.MessageEmbed()
-        .setColor('#808080')
-        .setTitle('Select Difficulty')
-        .setDescription('🇳:Normal' + 
-        "\n" + '🇭:Hard' +
-        "\n" + '🇽:Extreme')
+            .setColor('#808080')
+            .setTitle('Select Difficulty')
+            .setDescription('🇳:Normal' + 
+            "\n" + '🇭:Hard' +
+            "\n" + '🇽:Extreme')
 
         const BergiusN = new Discord.MessageEmbed()
             .setColor('#808080')
