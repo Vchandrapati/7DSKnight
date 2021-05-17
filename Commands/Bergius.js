@@ -17,7 +17,7 @@ module.exports = {
         const BergiusN = new Discord.MessageEmbed()
             .setColor('#808080')
             .setTitle('Bergius Normal Guide')
-            .setDescription('Team: rZeldris, rMonspeet, Kyo, Twigo' +
+            .setDescription('Team: rDiane, bMatrona, gDrole, rCamilla' +
             "\n" + ' ' +
             "\n" + 'Food: HP' +
             "\n" + ' ' +
