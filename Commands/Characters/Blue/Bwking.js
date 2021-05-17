@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
     category: 'Character Info',
     description: 'Shows Character Info',
-    aliases: ['festking'],
+    aliases: ['festking', 'festivalking'],
     
     callback: ({ message }) => {
         const Character = new Discord.MessageEmbed()
