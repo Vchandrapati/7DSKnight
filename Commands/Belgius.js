@@ -2,21 +2,21 @@ const Discord = require('discord.js')
 
 module.exports = {
     category: 'Guides',
-    description: 'Bergius Guide',
+    description: 'Belgius Guide',
 
     callback: async ({ message }) => {
 
         //#region guides
-        const Bergius = new Discord.MessageEmbed()
+        const Belgius = new Discord.MessageEmbed()
             .setColor('#808080')
             .setTitle('Select Difficulty')
             .setDescription('🇳:Normal' + 
             "\n" + '🇭:Hard' +
             "\n" + '🇽:Extreme')
 
-        const BergiusN = new Discord.MessageEmbed()
+        const BelgiusN = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Normal Guide')
+            .setTitle('Belgius Normal Guide')
             .setDescription('Team: rDiane, bMatrona, gDrole, rCamilla' +
             "\n" + ' ' +
             "\n" + 'Food: HP' +
@@ -49,9 +49,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 1.5k+')
 
-        const BergiusHG = new Discord.MessageEmbed()
+        const BelgiusHG = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Hard Gloxinia Guide')
+            .setTitle('Belgius Hard Gloxinia Guide')
             .setDescription('Team: gGerhearde, bMerlin, rGlox, rCamilla' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
@@ -94,9 +94,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 2.5k+')
 
-        const BergiusHM = new Discord.MessageEmbed()
+        const BelgiusHM = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Hard Camilla Guide')
+            .setTitle('Belgius Hard Camilla Guide')
             .setDescription('Team: rDiane, gGerhearde, rCamilla, gMerlin ' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
@@ -135,9 +135,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 3.2k+')
 
-        const BergiusHR = new Discord.MessageEmbed()
+        const BelgiusHR = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Hard Ram Guide')
+            .setTitle('Belgius Hard Ram Guide')
             .setDescription('Team: gRam, bGowther, rGlox, gMerlin' +
             "\n" + ' ' +
             "\n" + 'Food: Attack' +
@@ -170,9 +170,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 3k+')
 
-        const BergiusXG = new Discord.MessageEmbed()
+        const BelgiusXG = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Extreme Gerhearde Guide')
+            .setTitle('Belgius Extreme Gerhearde Guide')
             .setDescription('Team: rDiane, bMatrona, gDrole, gGerhearde' +
             "\n" + ' ' +
             "\n" + 'Food: HP' +
@@ -211,9 +211,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 4.2k+')
 
-        const BergiusXM = new Discord.MessageEmbed()
+        const BelgiusXM = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Extreme Merlin Guide')
+            .setTitle('Belgius Extreme Merlin Guide')
             .setDescription('Team: rDiane, bMatrona, gDrole, gMerlin' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
@@ -248,9 +248,9 @@ module.exports = {
             "\n" + ' ' +
             "\n" + 'Potential Points: 4.5k+')
 
-        const BergiusXF = new Discord.MessageEmbed()
+        const BelgiusXF = new Discord.MessageEmbed()
             .setColor('#808080')
-            .setTitle('Bergius Extreme Fest King Guide')
+            .setTitle('Belgius Extreme Fest King Guide')
             .setDescription('Team: rHelbram, bFestKing, gMerlin, bGowther' +
             "\n" + ' ' +
             "\n" + 'Food: Ult Gauge' +
@@ -282,7 +282,7 @@ module.exports = {
             "\n" + 'Potential Points: 2.5k+')
         //#endregion
 
-        const sentMessage = await message.channel.send(Bergius);
+        const sentMessage = await message.channel.send(Belgius);
         const reactions = ['🇳', '🇭', '🇽'];      
         for (const reaction of reactions) sentMessage.react(reaction);      
         
@@ -296,19 +296,19 @@ module.exports = {
         const xcollector = sentMessage.createReactionCollector(Xfilter, { time: 5000})
 
         ncollector.on('collect', r => {
-            message.channel.send(BergiusN)
+            message.channel.send(BelgiusN)
         }); 
 
         hcollector.on('collect', r => {
-            message.channel.send(BergiusHG)
-            message.channel.send(BergiusHM)
-            message.channel.send(BergiusHR)
+            message.channel.send(BelgiusHG)
+            message.channel.send(BelgiusHM)
+            message.channel.send(BelgiusHR)
         }); 
 
         xcollector.on('collect', r => {
-            message.channel.send(BergiusXG)
-            message.channel.send(BergiusXM)
-            message.channel.send(BergiusXF)
+            message.channel.send(BelgiusXG)
+            message.channel.send(BelgiusXM)
+            message.channel.send(BelgiusXF)
         }); 
     }
 }
